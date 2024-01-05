@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Fanny Bagus Ramadhan</title>
+    <meta name="description" content="Fanny Bagus Ramadhan's Resume">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <header class="flex py-3 justify-between px-5">
+                <h6 class="text-lg sm:text-lg">FANNY.DEV</h6>
+                <ul class="profiles">
+                    {{#each basics.profiles}}
+                   <li class="align-bottom inline-block | ml-1">
+                       <a href="{{ this.url }}" title="{{this.network}}">
+                           <span class="iconify" data-icon="{{ toSocialIcon this.network }}" data-width="20" data-height="20"></span>
+                       </a>
+                   </li> 
+                   {{/each}}
+                </ul>
+            </header>
+            <hr class="border-b border-b-2 border-stone-700">
+            <div class="content | px-4">
+                <section class="basic | flex flex-wrap gap-8 md:flex-nowrap md:gap-16">
+                    
+
+                    <div class="w-full md:w-1/2">
+                    </div>
+                </section>
+
+                <div class="two-sides | flex flex-wrap md:flex-nowrap">
+                    <div class="w-full md:w-1/2 | md:border-r-2 border-stone-600 md:px-5 py-8">
+
+                    <div class="name mb-12">
+                        <h1 class="basic__name | mb-2 color-red text-6xl text-stone-900">{{ basics.name }}</h1>
+                        <h3 class="basic__label | text-4xl mb-8 text-stone-800">{{{ basics.label }}}</h3>
+                        <p class="text-xl text-stone-800 text-left">{{{ breaklines basics.summary }}}</p>
+                    </div>
+
+
+                    <section class="languages">
+                        <h3 class="section__title">Contact</h3>
+                        <ul class="language-list">
+                            {{#each basics.profiles}}
+                            <li class="list-none flex items-center gap-3 mb-5">
+                                <span class="iconify w-7 h-7" data-icon="{{toSocialIcon this.network }}"></span>
+                                <span><a href="{{this.url}}">{{this.text}}</a></span>
+                            </li>
+                            {{/each}}
+                        </ul>                                
+                    </section>
+    
+                    {{#if education}}
+                        <section class="education">
+                            <h3 class="section__title">Education</h3>
+                            <ul class="card-lists">
+                            {{#each education}}
+                                <li class="card mb-5">
+                                    <h5 class="card__title">{{this.area}} - {{ this.studyType }}</h5>
+                                    <p class="card__desc">{{this.institution}}</p>
+                                    <p class="card__desc">{{this.startDate}} - {{this.endDate}}</p>
+                                </li>
+                            {{/each}}
+                            </ul>
+                        </section>
+                    {{/if}}
+
+
+
+
+                    {{#if work}}
+                        <section class="work">
+                            <h3 class="section__title">Work Experiences</h3>
+                            <ul class="card-lists">
+                            {{#each work}}
+                                <li class="card mb-5">
+                                    <h5 class="card__title mb-1"><a href="{{ this.url }}">{{ this.name }}</a></h5>
+                                    <p class="card__desc mb-2">{{this.position}} | {{this.startDate}} - {{this.endDate}}</p>
+                                    {{#if this.summary}}
+                                    <p>{{ summary }}</p>
+                                    {{/if}}
+                                    <ul class="highlights | list-disc pl-4">
+                                        {{#each this.highlights}}
+                                            <li>{{ this }}</li>
+                                        {{/each}}
+                                    </ul>
+                                </li>
+                            {{/each}}
+                            </ul>
+                        </section>
+                    {{/if}}
+
+
+                    {{#if languages}}
+                        <section class="languages">
+                            <h3 class="section__title">Languages</h3>
+                            <ul class="language-list pl-5">
+                                {{#each languages}}
+                                <li class="list-disc">
+                                    <p class="stackName py-2 text-lg"><strong>{{ this.language }}</strong> - <span>{{ this.fluency }}</span></p>
+                                </li>
+                                {{/each}}
+                            </ul>                                
+                        </section>
+                    {{/if}}
+
+                    </div>
+                    <div class="w-full md:w-1/2 | md:border-l border-stone-600 md:px-5 py-8">
+                        {{#if skills}}
+                            <section class="education">
+                                <h3 class="section__title">Tech Stacks</h3>
+                                <div class="grid grid-cols-3">
+                                {{#each skills}}
+                                    <p class="stackName py-2"><strong>{{ this.name }}</strong></p>
+                                    <p class="stackList py-2">{{joinComma this.keywords }}</p>
+                                {{/each}}
+                                </div>
+                            </section>
+                        {{/if}}
+                        {{#if projects}}
+                            <section class="projects">
+                                <h3 class="section__title">Notable Projects</h3>
+                                <ul class="card-lists pt-2">
+                                {{#each projects}}
+                                    <li class="card mb-5">
+                                        <h5 class="card__title | flex items-center gap-2">
+                                            <span>{{this.name}}</span>
+                                            <a href="{{ this.githubUrl }}" target="_blank" class="no-underline">
+                                                <span class="iconify" data-icon="{{toSocialIcon "github" }}"></span>
+                                            </a>
+                                        </h5>
+                                        <p class="card__desc my-2">{{this.description}}</p>
+                                        <p class="card__desc | flex items-center gap-1">
+                                            <span class="iconify" data-icon="ri:star-fill"></span>
+                                            <span>{{ this.stars }}</span>
+                                        </p>
+                                    </li>
+                                {{/each}}
+                                </ul>
+                                <a href="https://github.com/FannyDevz\" target="blank">See Other projects</a>
+                            </section>
+                        {{/if}}
+
+
+
+                    {{#if awards}}
+                    <section class="awards">
+                        <h3 class="section__title">CERTIFICATES</h3>
+                        <ul class="award-list">
+                            {{#each awards}}
+                                <li class="card mb-5">
+                                    <h5 class="card__title | mb-1">{{ this.title }}</h5>
+                                    <p class="card__desc | mb-2"><span class="iconify inline text-stone-500" data-icon="ri:building-fill"></span> {{ this.awarder }} | {{ this.date }}</p>
+                                    {{#if this.summary}}
+                                    <p>{{ summary }}</p>
+                                    {{/if}}
+                                    <ul class="highlights | list-disc pl-4">
+                                        {{#each this.highlights}}
+                                            <li>{{ this }}</li>
+                                        {{/each}}
+                                    </ul>
+                                </li>
+                            {{/each}}                      
+                        </ul>
+                    </section>
+                {{/if}}
+
+                    </div>
+                </div>
+
+                <footer class="text-center border-t-2 border-stone-700 py-5">
+                    <a href="https://resume.fanny.dev">resume.fanny.dev</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@iconify/iconify@2.2.1/dist/iconify.min.js"></script>
+</body>
+</html>

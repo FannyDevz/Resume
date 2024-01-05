@@ -1,0 +1,274 @@
+{
+  "basics": {
+    "name": "Fanny Bagus Ramadhan",
+    "label": "Web Developer",
+    "image": "https://avatars.githubusercontent.com/u/65803059?v=4",
+    "email": "me@fanny.dev",
+    "url": "https://fanny.dev",
+    "summary": "Hi, My name is Fanny Bagus Ramadhan but i would like if you call me Fanny, I am a skilled full-stack web developer with expertise in front-end and back-end technologies. I create visually appealing interfaces using HTML, CSS, and JavaScript, and build dynamic web applications with React, Node.js, and PHP. With experience in SQL and NoSQL databases, I implement secure authentication and efficient data handling. My collaborative mindset, attention to detail, and commitment to continuous learning ensure the delivery of high-quality projects that exceed client expectations.",
+    "location": {
+      "countryCode": "ID",
+      "region": "Indonesia"
+    },
+    "profiles": [
+      {
+        "text": "FannyDevz",
+        "network": "github",
+        "username": "FannyDevz",
+        "url": "https://github.com/FannyDevz"
+      },
+      {
+        "text": "Fanny Bagus Ramadhan",
+        "network": "linkedin",
+        "username": "fanny-bagus-ramadhan",
+        "url": "https://linkedin.com/in/fanny-bagus-ramadhan"
+      },
+      {
+        "text": "fanny.bagus.r",
+        "network": "instagram",
+        "username": "fanny.bagus.r",
+        "url": "https://instagram.com/fanny.bagus.r"
+      },
+      {
+        "text": "fanny.dev",
+        "network": "portfolio",
+        "username": "fanny.dev",
+        "url": "https://fanny.dev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Freelance Web",
+      "position": "Web Developer",
+      "url": "https://github.com/FannyDevz",
+      "startDate": "Jun 2020",
+      "endDate": "Present",
+      "summary": "",
+      "location": "Github",
+      "highlights": [
+      
+      ]
+    },
+    {
+      "name": "PT Jayahost Web Media",
+      "position": "Web Developer",
+      "url": "https://jayahost.com/",
+      "startDate": "May 2023",
+      "endDate": "Present",
+      "summary": "",
+      "location": "Indonesia",
+      "highlights": [
+       
+      ]
+    },
+    {
+      "name": "RSU Lirboyo",
+      "position": "IT Support",
+      "url": "https://rsulirboyo.com/",
+      "startDate": "Dec 2022",
+      "endDate": "May 2023",
+      "summary": "",
+      "location": "Indonesia",
+      "highlights": [
+       
+      ]
+    },
+    {
+      "name": "Freelance Designer",
+      "position": "Designer",
+      "url": "https://drive.google.com/drive/folders/1drhwGn5vcp_cUs8XXiZ6wQ1oDGQbIwoi?usp=drive_link",
+      "startDate": "May 2019",
+      "endDate": "Present",
+      "summary": "",
+      "location": "-",
+      "highlights": [
+        
+      ]
+    },
+    {
+      "name": "PT Rahma Riyadi Techno",
+      "position": "Designer",
+      "url": "https://yoisoweb.com/",
+      "startDate": "Oct 2021",
+      "endDate": "Nov 2022",
+      "summary": "",
+      "location": "Kediri - Indonesia",
+      "highlights": [
+       
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Dian Nuswantoro University",
+      "url": "https://dinus.ac.id/",
+      "area": "Computer Science",
+      "studyType": "Informatics Engineering",
+      "startDate": "2023",
+      "endDate": "Present",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "State Polytechnic of Malang",
+      "url": "https://polinema.ac.id/",
+      "area": "Computer Science",
+      "studyType": "Informatics Management",
+      "startDate": "2018",
+      "endDate": "2021",
+      "score": "3.86",
+      "courses": []
+    },
+    {
+      "institution": "SMKN 1 Ngasem Kediri",
+      "url": "https://smkn1ngasem-kediri.sch.id/",
+      "area": "Computer and Network Engineering",
+      "studyType": "Vocational High School",
+      "startDate": "2015",
+      "endDate": "2018",
+      "score": "30.10",
+      "courses": []
+    }
+  ],
+  "volunteer": [],
+  "awards": [
+    {
+      "title": "CSS, Javascript, Javascript Intermediate, HTML,PHP",
+      "date": "May 2023",
+      "awarder": "Sololearn",
+      "highlights": [
+        "CSS : complete several task CSS animation",
+        "Javascript : complete several task Javascript",
+        "Javascript Intermediate : complete several task Javascript",
+        "HTML : complete several task HTML",
+        "PHP : complete several task PHP"
+      ],
+      "summary": ""
+    },
+    {
+      "title": "Mikrotik Network",
+      "date": "Sep 2021",
+      "awarder": "State Polytechnic of Malang",
+      "highlights": [
+        "Mikrotik Network : complete several task Mikrotik Network"
+      ],
+      "summary": ""
+    },
+    {
+      "title": "The Fundamental of Digital Marketing",
+      "date": "Mar 2021",
+      "awarder": "Google Digital Garage",
+      "highlights": [
+        "The Fundamental of Digital Marketing : complete several task The Fundamental of Digital Marketing"
+      ],
+      "summary": ""
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "",
+      "keywords": ["React.js", "Vanila.js", "HTML", "Vue.js", "CSS", "Next.js","Vite"]
+    },
+    {
+      "name": "Backend",
+      "level": "",
+      "keywords": [
+        "Laravel",
+        "Node.js",
+        "Wordpress",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "Go"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": ["PHP", "Node.js", "Javascript", "Java", "TypeScript", "Go"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Indonesian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Books",
+      "keywords": ["Fiction", "Fantasy", "Self-improvement"]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Absent System And Web Landing Page",
+      "description": "System that incorporates geolocation and photo features, accompanied by a landing page.",
+      "highlights": [],
+      "keywords": [
+        "php",
+        "javascript",
+        "Vue.js",
+        "bootstrap",
+        "laravel"
+      ],
+      "startDate": "May 2023",
+      "endDate": "Currently maintaining",
+      "githubUrl": "https://github.com/FannyDevz/Karirku",
+      "url": "https://github.com/FannyDevz",
+      "roles": ["Owner & Maintainer"],
+      "type": "application",
+      "entity": ""
+    },
+    {
+      "name": "Maps Scrapper",
+      "description": "A web scraper that scrapes data from Google Maps.",
+      "highlights": [],
+      "keywords": [
+        "Node.js"
+      ],
+      "startDate": "Nov 2023",
+      "endDate": "Currently maintaining",
+      "githubUrl": "https://github.com/FannyDevz/GoogleMapsScraper",
+      "url": "https://github.com/FannyDevz/GoogleMapsScraper",
+      "roles": ["Owner & Maintainer"],
+      "type": "application",
+      "entity": ""
+    },
+    {
+      "name": "AnimeJS",
+      "description": "A web anime library that provides an easy way to search and browse anime.",
+      "highlights": [],
+      "keywords": ["Next.js", "React.js", "tailwindcss"],
+      "startDate": "Aug 2023",
+      "endDate": "Currently maintaining",
+      "githubUrl": "https://github.com/FannyDevz/Anime",
+      "url": "fz.fanny.dev",
+      "roles": ["Owner & Maintainer"],
+      "type": "application",
+      "entity": ""
+    },
+    {
+      "name": "Classroom System",
+      "description": "A web application that provides an easy way to manage classroom.",
+      "highlights": [],
+      "keywords": ["laravel", "php","bootstrap"],
+      "startDate": "Mar 2021",
+      "endDate": "Currently maintaining",
+      "githubUrl": "https://github.com/FannyDevz/Classroom",
+      "url": "https://github.com/FannyDevz/Classroom",
+      "roles": ["Owner & Maintainer"],
+      "type": "application",
+      "entity": ""
+    }
+  ]
+}
